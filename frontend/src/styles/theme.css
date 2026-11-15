@@ -1,0 +1,63 @@
+/* =========================================================
+   EFCT Predict - sistema visual (Responsable: Gabriel)
+   Blanco + gradiente amarillo/naranja. Todo color sale de aqui.
+   ========================================================= */
+:root {
+  --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --bg: #ffffff;
+  --bg-soft: #fffaf0;
+  --surface: #ffffff;
+  --text: #17140f;
+  --muted: #6b665d;
+  --faint: #9a958b;
+  --border: #eee7da;
+  --border-strong: #ddd3c1;
+
+  --brand-1: #ffd978;
+  --brand-2: #ffc464;
+  --brand-3: #ffb14d;
+  --brand-4: #ff9933;
+  --brand-grad: linear-gradient(90deg, #ffd978 0%, #ffc464 35%, #ffb14d 65%, #ff9933 100%);
+  --brand-grad-soft: linear-gradient(135deg, #fff6dd 0%, #ffecd2 100%);
+  --brand-ink: #8a4b00;
+
+  --low: #2f9e6b;
+  --low-bg: #e8f6ef;
+  --medium: #d98c00;
+  --medium-bg: #fff3d6;
+  --high: #d4483b;
+  --high-bg: #fde9e6;
+  --info: #3a6ea5;
+  --info-bg: #eaf1f9;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(23, 20, 15, 0.05);
+  --shadow: 0 8px 24px rgba(23, 20, 15, 0.06);
+  --shadow-lg: 0 18px 40px rgba(23, 20, 15, 0.09);
+
+  --page-w: 1200px;
+  --gap: 20px;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; }
+body {
+  font-family: var(--font);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 520px at 15% -10%, rgba(255, 217, 120, 0.18), transparent 60%),
+    radial-gradient(900px 480px at 90% -12%, rgba(255, 153, 51, 0.12), transparent 60%),
+    var(--bg);
+  background-attachment: fixed;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.2; letter-spacing: -0.01em; }
+p { margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
