@@ -1,0 +1,16 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+SQLAlchemy>=2.0
+pydantic>=2.5
+bcrypt>=4.1
+PyJWT>=2.8
+APScheduler>=3.10,<4
+python-dotenv>=1.0
+requests>=2.31
+tzdata>=2024.1
+# Postgres en la nube (opcional en local):
+# psycopg2-binary>=2.9
+
+# Pruebas
+pytest>=8.0
+httpx>=0.27

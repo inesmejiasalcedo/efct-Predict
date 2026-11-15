@@ -1,0 +1,21 @@
+# Secretos: nunca subir
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+backend/efct.db
+*.db
+
+# Node
+node_modules/
+frontend/dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
