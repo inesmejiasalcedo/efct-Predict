@@ -1,0 +1,30 @@
+{
+  "_comment": "Pesos del modelo logistico. Se recalibran con: python -m scripts.calibrate",
+  "delivery": {
+    "bias": -6.306,
+    "congestion": 6.683,
+    "rain": 3.458,
+    "peak": 1.407,
+    "volatility": 2.24,
+    "pop": 0.673
+  },
+  "arrival": {
+    "bias": -3.2,
+    "congestion": 4.5,
+    "rain": 2.0,
+    "weekday_rush": 0.8
+  },
+  "demand": {
+    "rain": 0.3,
+    "pop": 0.05,
+    "traffic": 0.2,
+    "heat": 0.1,
+    "cold": 0.08
+  },
+  "cost": {
+    "bias": -2.5,
+    "fx_up": 1.6,
+    "food_inflation": 1.2
+  },
+  "threshold": 28
+}
