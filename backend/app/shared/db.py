@@ -21,6 +21,8 @@ def utcnow() -> datetime:
 def _make_engine(url: str):
     if url.startswith("postgres://"):  # formato que usan algunos proveedores cloud
         url = url.replace("postgres://", "postgresql://", 1)
+    if url.startswith("postgresql://"):  # usar siempre el driver psycopg2 (el que instala el Dockerfile)
+        url = url.replace("postgresql://", "postgresql+psycopg2://", 1)
     if url.startswith("sqlite:///./"):  # ruta relativa -> siempre dentro de backend/
         from app.config import BASE_DIR
 
